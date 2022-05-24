@@ -4,10 +4,74 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;400;700&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="style.css" />
         <title>Rock Paper Scissors</title>
     </head>
     <body>
-        Hello
+        <div class="play-again hidden">
+            <div class="play-again-popup">
+                <div class="final-result"></div>
+                <div class="final-score"></div>
+                <div class="replay">Play Again?</div>
+            </div>
+        </div>
+        <!-- HEADER -->
+        <header class="head">
+            <h1>Rock Paper Scissors</h1>
+        </header>
+        <!-- SCOREING -->
+        <section class="score">
+            <div class="heading">
+                <h2>Scores</h2>
+                <h3>First to five wins!</h3>
+            </div>
+            <div class="scores">
+                <div class="score-template">
+                    <div class="name">Player</div>
+                    <div class="pi player">
+                        <div class="portrait">
+                            <img src="" alt="" />
+                        </div>
+                        <div class="info">
+                            Score: <span class="pScore">0</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="score-template end">
+                    <div class="name">Computer</div>
+                    <div class="pi computer">
+                        <div class="portrait">
+                            <img src="" alt="" />
+                        </div>
+                        <div class="info">
+                            Score: <span class="comScore">0</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="results">&nbsp;</div>
+        </section>
+        <!-- INPUTS -->
+        <h2 class="selection-heading">Make a selection</h2>
+        <section class="inputs">
+            <div data-value="0" class="button rock">
+                <img src="./images/rock.svg" alt="" />
+            </div>
+            <div data-value="1" class="button paper">
+                <img src="./images/paper.svg" alt="" />
+            </div>
+            <div data-value="2" class="button scissors">
+                <img src="./images/scissors.svg" alt="" />
+            </div>
+        </section>
+        <!-- FOOTER -->
+        <footer></footer>
         <script src="script.js"></script>
     </body>
 </html>
